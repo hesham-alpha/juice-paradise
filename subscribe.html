@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="./"><meta name="draftly-preset-kind" content="runtime-copy"><meta name="robots" content="noindex">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Subscribe &amp; save 20% | Juice Paradise</title>
+  <meta name="description" content="Never run dry: pick a box size and a rhythm, save 20% on every box, skip or cancel any time." />
+  <meta name="theme-color" content="#fc7f20" />
+  <meta property="og:image" content="./media/og.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23ff7a1a'/%3E%3Cpath d='M16 4v24M4 16h24M7.5 7.5l17 17M24.5 7.5l-17 17' stroke='%23fff3e2' stroke-width='1.6'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="./assets/subscribe-BUT2dcnR.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/shell-PN3sp6ph.js">
+  <link rel="modulepreload" crossorigin href="./assets/ui-Bv-ay5QI.js">
+  <link rel="stylesheet" crossorigin href="./assets/shell-VfJiyEuO.css">
+</head>
+<body>
+  <main id="main">
+    <section class="sub-hero">
+      <div class="container sub-hero-grid">
+        <div class="sub-copy">
+          <span class="chip" data-intro="eyebrow" data-edit="subpage.eyebrow"></span>
+          <h1 data-hero-headline data-edit="subpage.headline"></h1>
+          <p class="sub" data-intro="sub" data-edit="subpage.sub"></p>
+          <ol class="steps" data-intro="cta" data-steps></ol>
+        </div>
+        <figure class="box-fig" data-box-fig>
+          <div class="box-card"><img src="./media/box.webp" alt="An open kraft box holding six colourful juice bottles in crinkle paper" width="1024" height="1024" decoding="async"><i class="box-tint"></i></div>
+          <span class="save-badge" aria-hidden="true"><b>20%</b><small>off every box</small></span>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sec plan" id="plan">
+      <div class="container plan-grid">
+        <div class="plan-steps">
+          <div class="plan-step" data-reveal>
+            <h2><i>1</i> Pick a box</h2>
+            <div class="sizes" role="radiogroup" aria-label="Box size" data-sizes></div>
+          </div>
+          <div class="plan-step" data-reveal>
+            <h2><i>2</i> Choose a rhythm</h2>
+            <div class="rhythm" role="radiogroup" aria-label="Delivery rhythm" data-rhythm></div>
+          </div>
+          <div class="plan-step" data-reveal>
+            <h2><i>3</i> Fill the box</h2>
+            <ul class="mix" data-mix></ul>
+            <div class="meter"><div class="meter-bar"><i data-meter></i></div><span data-meter-txt aria-live="polite"></span></div>
+            <button type="button" class="pill ghost" data-surprise>Surprise me</button>
+          </div>
+        </div>
+        <aside class="summary" data-reveal data-reveal-delay="0.1" aria-label="Subscription summary">
+          <h3>Your subscription</h3>
+          <div class="crate small" data-crate aria-hidden="true"></div>
+          <dl class="sum">
+            <div><dt data-sum-title>6-pack</dt><dd data-sum-was></dd></div>
+            <div class="save"><dt>Subscriber saving (20%)</dt><dd data-sum-save></dd></div>
+            <div><dt>Delivery</dt><dd>Free</dd></div>
+            <div class="tot"><dt data-sum-rhythm>Every 2 weeks</dt><dd data-sum-now></dd></div>
+          </dl>
+          <p class="year">That is <b data-year></b> saved a year.</p>
+          <button type="button" class="pill solid big block" data-start><span data-start-label>Start my subscription</span><span class="arrow" aria-hidden="true">&rarr;</span></button>
+          <p class="fine">Skip, swap or cancel any time before the cut-off, no fees.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="sec perks-sec">
+      <div class="container">
+        <div class="perk-grid" data-perk-grid></div>
+      </div>
+    </section>
+
+    <section class="sec faq-sec">
+      <div class="container stock-grid">
+        <header class="sec-head left" data-reveal><span class="eyebrow">Questions</span><h2 data-edit="subpage.faqTitle"></h2></header>
+        <div class="faq" data-faq data-reveal data-reveal-delay="0.1"></div>
+      </div>
+    </section>
+  </main>
+<script id="draftly-motion-runtime">/* Draftly runtime for templates-motion presets — inlined before </body> by
+ * scripts/import-motion-presets.mjs (an inline classic script still runs before the deferred
+ * module bundles). Dependency-free; keep it small.
+ *
+ * Why it exists: these sites write their copy with innerHTML / textContent and then split
+ * headings into one span per word, and their WebGL scenes create <video>/<img> elements that
+ * never enter the DOM. Neither the editor bridge nor the published apply script can reach
+ * that, so this runtime applies the customer's customization at the source and the other two
+ * stand down when #draftly-motion-runtime is present.
+ *
+ * Customization comes from:
+ *  - published / exported pages: the #draftly-customization-data JSON in <head>
+ *  - the editor iframe (?draftlyEditor=1): 'draftly-preset-sync' messages from the parent,
+ *    stored per page in sessionStorage, then the iframe reloads to apply them from the start.
+ *
+ * 1. Copy: one pass per string over text only (never inside tags/attributes), single-word
+ *    matches on word boundaries, output escaped, and a guard so text that already reads as
+ *    the replacement isn't replaced again. Writes to detached nodes are skipped: the word
+ *    splitter re-writes already-replaced words into detached spans.
+ * 2. Media: src/srcset/poster on img/video/source — set from JS (in the DOM or not) or already in
+ *    the parsed page — is swapped by filename. Responsive variants of a swapped file (hero-720.mp4,
+ *    k1-960.webp for k1-1920.webp) follow it; the stem rule matches the importer's mediaStem().
+ *    A video's poster is cleared when the video is swapped (it would flash the old clip), and
+ *    url(...) in stylesheets / style attributes / style setters is swapped the same way.
+ * 2b. Text edits from the editor's click-to-edit, keyed by the element's data-edit path
+ *    ("hero.headline", stored as contentEdits["edit:hero.headline"]): the first write into that
+ *    element is replaced with the edited text (escaped; *x* → <em>, \n → <br>, as the sites do).
+ * 3. Pages: every preview (gallery, quick view, editor) and every published copy is the home
+ *    page only, so links to sibling .html pages point at a matching section of this page, or
+ *    are hidden.
+ * 4. In-page anchors: <base href> makes "#id" resolve against the base; scroll instead.
+ */
+(function () {
+  'use strict';
+  var EDITOR = /[?&]draftlyEditor=1(&|$)/.test(location.search);
+  var KEY = 'draftly-motion-cfg:' + location.pathname;
+  var cfg = null;
+
+  function isArray(a) {
+    return Object.prototype.toString.call(a) === '[object Array]';
+  }
+
+  function cleanPairs(arr) {
+    var out = [];
+    if (!isArray(arr)) return out;
+    for (var i = 0; i < arr.length; i++) {
+      var r = arr[i];
+      if (r && typeof r.from === 'string' && typeof r.to === 'string' && r.from.length >= 2 && r.from !== r.to) {
+        out.push({ from: r.from, to: r.to });
+      }
+    }
+    return out.sort(function (a, b) { return b.from.length - a.from.length; });
+  }
+
+  function fileName(url) {
+    var s = String(url || '').split('#')[0].split('?')[0];
+    return s.slice(s.lastIndexOf('/') + 1).toLowerCase();
+  }
+
+  var VARIANT = /[-_.](?:240|320|360|480|540|640|720|768|960|1080|1280|1440|1600|1920|2048|2560|3840|mobile|sm|small|lg|large)$/i;
+  /** hero-720.mp4 → "hero|v": every responsive variant of one asset shares a stem. */
+  function stemOf(name) {
+    var kind = /\.(mp4|webm|mov|m3u8)$/i.test(name) ? 'v' : 'i';
+    var s = name.replace(/\.[a-z0-9]+$/i, '');
+    while (VARIANT.test(s)) s = s.replace(VARIANT, '');
+    return s + '|' + kind;
+  }
+
+  function safeMediaUrl(url) {
+    if (typeof url !== 'string' || !url) return null;
+    if (/^(https?:|blob:)/i.test(url) || /^data:(image|video)\//i.test(url)) return url;
+    if (/^[a-z][a-z0-9+.-]*:/i.test(url)) return null; // javascript:, etc.
+    // Published uploads are page-relative (./custom-assets/…): resolve against the page, not <base>.
+    try {
+      return new URL(url, location.href).href;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /** {pairs, media} from the published JSON or the editor's stored sync. */
+  function normalize(raw, fromEditor) {
+    var media = {};
+    var slots = {};
+    var catalog = raw.assetSlots || raw.assetCatalog || [];
+    for (var i = 0; i < catalog.length; i++) if (catalog[i] && catalog[i].id) slots[catalog[i].id] = catalog[i];
+    var overrides = raw.assetOverrides || {};
+    if (isArray(overrides)) {
+      var map = {};
+      for (var j = 0; j < overrides.length; j++) if (overrides[j] && overrides[j].assetId) map[overrides[j].assetId] = overrides[j].url;
+      overrides = map;
+    }
+    var stems = {};
+    var edits = {};
+    var ce = raw.contentEdits || {};
+    for (var key in ce) {
+      // Published / exported values are entity-encoded (lib/preset-export.ts); the editor's are raw.
+      if (key.indexOf('edit:') === 0 && typeof ce[key] === 'string') edits[key.slice(5)] = fromEditor ? ce[key] : decodeEntities(ce[key]);
+    }
+    for (var id in overrides) {
+      var slot = slots[id];
+      var url = safeMediaUrl(overrides[id]);
+      if (slot && slot.defaultUrl && url) {
+        var name = fileName(slot.defaultUrl);
+        media[name] = url;
+        stems[stemOf(name)] = url;
+      }
+    }
+    return { pairs: cleanPairs(raw.replacements), media: media, stems: stems, edits: edits };
+  }
+
+  /** contentEdits values pass through DOMPurify on export, which entity-encodes text. */
+  function decodeEntities(s) {
+    return s
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/&nbsp;/g, ' ')
+      .replace(/&amp;/g, '&');
+  }
+
+  /** The templates' own mdInline(): escape, *accent* → <em>, \n → <br>. */
+  function mdInline(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+      .replace(/\n/g, '<br>');
+  }
+
+  /** Edited text for a data-edit element's first write (null when there is none / already applied). */
+  function editFor(el) {
+    if (!el || el.nodeType !== 1 || el.__draftlyEdited) return null;
+    var key = el.getAttribute('data-edit');
+    if (!key) return null;
+    var c = load();
+    if (!c.edits || !Object.prototype.hasOwnProperty.call(c.edits, key)) return null;
+    el.__draftlyEdited = true;
+    return c.edits[key];
+  }
+
+  function load() {
+    if (cfg) return cfg;
+    var raw = null;
+    var fromEditor = false;
+    try {
+      var el = document.getElementById('draftly-customization-data');
+      if (el) raw = JSON.parse(el.textContent || '{}');
+      else if (EDITOR) {
+        raw = JSON.parse(sessionStorage.getItem(KEY) || 'null');
+        fromEditor = true;
+      }
+    } catch (e) {
+      raw = {};
+    }
+    // Before the JSON block is parsed, don't cache an empty answer.
+    if (!raw && document.readyState === 'loading') return { pairs: [], media: {}, stems: {}, edits: {} };
+    cfg = normalize(raw || {}, fromEditor);
+    cfg.text = matcher(cfg.pairs, false);
+    cfg.html = matcher(cfg.pairs, true);
+    return cfg;
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
+  function escapeRe(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\</body>');
+  }
+
+  /** One regex for all pairs (longest first) so output is never rescanned. */
+  function matcher(pairs, html) {
+    if (!pairs.length) return null;
+    var map = {};
+    var alts = [];
+    var plain = [];
+    for (var i = 0; i < pairs.length; i++) {
+      var from = html ? pairs[i].from.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') : pairs[i].from;
+      if (map[from]) continue;
+      map[from] = { to: html ? escapeHtml(pairs[i].to) : pairs[i].to, rawTo: pairs[i].to, from: from };
+      var head = /^[A-Za-z0-9À-￿]/.test(from) ? '(?<![\\p{L}\\p{N}])' : '';
+      var tail = /[A-Za-z0-9À-￿]$/.test(from) ? '(?![\\p{L}\\p{N}])' : '';
+      alts.push(head + escapeRe(from) + tail);
+      plain.push(escapeRe(from));
+    }
+    var re;
+    try {
+      re = new RegExp(alts.join('|'), 'gu');
+    } catch (e) {
+      re = new RegExp(plain.join('|'), 'g'); // engines without lookbehind
+    }
+    return { re: re, map: map };
+  }
+
+  function applyMatcher(m, s) {
+    if (!m) return s;
+    m.re.lastIndex = 0;
+    return s.replace(m.re, function (hit, offset, str) {
+      var e = m.map[hit];
+      if (!e) return hit;
+      // Already reads as the replacement here (re-written text, to ⊇ from): leave it.
+      var k = e.to.indexOf(hit);
+      if (k !== -1 && offset - k >= 0 && str.substr(offset - k, e.to.length) === e.to) return hit;
+      return e.to;
+    });
+  }
+
+  /** Override for a media URL: exact file name first, then any variant of the same asset. */
+  function mediaFor(url) {
+    var c = load();
+    var name = fileName(url);
+    if (!name) return null;
+    if (Object.prototype.hasOwnProperty.call(c.media, name)) return c.media[name];
+    var st = stemOf(name);
+    return Object.prototype.hasOwnProperty.call(c.stems, st) ? c.stems[st] : null;
+  }
+
+  /** A srcset naming a swapped file becomes just the new file (no width descriptors). */
+  function swapSrcset(v) {
+    var list = String(v).split(',');
+    for (var i = 0; i < list.length; i++) {
+      var next = mediaFor(list[i].trim().split(/\s+/)[0]);
+      if (next) return next.replace(/,/g, '%2C').replace(/\s/g, '%20');
+    }
+    return v;
+  }
+
+  /**
+   * poster="…" value: the override for that file, '' when it is the poster of a swapped video
+   * (hero-poster.jpg / hero.poster.jpg / hero.jpg next to hero.mp4), else null (leave it).
+   */
+  function posterFor(url) {
+    var next = mediaFor(url);
+    if (next) return next;
+    var name = fileName(url);
+    if (!name) return null;
+    var base = stemOf(name).split('|')[0].replace(/[-_.]poster$/i, '');
+    return Object.prototype.hasOwnProperty.call(load().stems, base + '|v') ? '' : null;
+  }
+
+  var CSS_URL = /url\(\s*(['"]?)([^'")]+)\1\s*\)/g;
+  /** url(...) references to swapped files, rewritten. */
+  function swapCssUrls(v) {
+    if (typeof v !== 'string' || v.indexOf('url(') === -1 || !hasMediaOverrides()) return v;
+    return v.replace(CSS_URL, function (all, q, u) {
+      var next = mediaFor(u);
+      return next ? 'url("' + next.replace(/"/g, '%22') + '")' : all;
+    });
+  }
+
+  function hasMediaOverrides() {
+    var c = load();
+    for (var k in c.media) return true;
+    return false;
+  }
+
+  function swapMediaAttrs(tag) {
+    tag = tag.replace(/(\s(src|poster|data-src|srcset|data-srcset)\s*=\s*)(["'])([^"']*)\3/gi, function (all, pre, attr, q, url) {
+      var u = url.replace(/&amp;/g, '&');
+      var next = /srcset$/i.test(attr) ? swapSrcset(u) : /^poster$/i.test(attr) ? posterFor(u) : mediaFor(u);
+      return next != null && next !== url ? pre + q + escapeHtml(next) + q : all;
+    });
+    // style="background-image:url(media/x.jpg)" (attribute value is entity-escaped in markup).
+    return tag.replace(/(\sstyle\s*=\s*)(["'])([^"']*url\([^"']*)\2/gi, function (all, pre, q, css) {
+      var next = swapCssUrls(css.replace(/&quot;/g, '"').replace(/&amp;/g, '&'));
+      return next !== css ? pre + q + escapeHtml(next) + q : all;
+    });
+  }
+
+  function replaceHtml(html) {
+    var c = load();
+    var hasMedia = hasMediaOverrides();
+    if (!c.html && !hasMedia) return html;
+    var parts = html.split(/(<[^>]*>)/);
+    var raw = false;
+    for (var i = 0; i < parts.length; i++) {
+      var p = parts[i];
+      if (!p) continue;
+      if (p.charAt(0) === '<' && p.charAt(p.length - 1) === '>') {
+        if (/^<(script|style)\b/i.test(p)) raw = true;
+        else if (/^<\/(script|style)\b/i.test(p)) raw = false;
+        else if (hasMedia) parts[i] = swapMediaAttrs(p);
+      } else if (!raw && c.html) {
+        parts[i] = applyMatcher(c.html, p);
+      }
+    }
+    return parts.join('');
+  }
+
+  function rawTextTarget(node) {
+    var el = node.nodeType === 1 ? node : node.parentNode;
+    return !!el && el.nodeType === 1 && /^(SCRIPT|STYLE|TEXTAREA)$/.test(el.tagName);
+  }
+
+  function wrap(proto, prop, fn) {
+    var d = proto && Object.getOwnPropertyDescriptor(proto, prop);
+    if (!d || !d.set || !d.configurable) return;
+    Object.defineProperty(proto, prop, {
+      configurable: true,
+      enumerable: d.enumerable,
+      get: d.get,
+      set: function (v) {
+        d.set.call(this, typeof v === 'string' ? fn(this, v) : v);
+      },
+    });
+  }
+
+  wrap(Element.prototype, 'innerHTML', function (el, v) {
+    if (rawTextTarget(el)) return v;
+    var ed = editFor(el);
+    return ed != null ? mdInline(ed) : replaceHtml(v);
+  });
+  wrap(Node.prototype, 'textContent', function (node, v) {
+    // Detached targets are skipped: the word splitter writes already-replaced words there.
+    if (!node.isConnected || rawTextTarget(node)) return v;
+    var ed = editFor(node);
+    if (ed != null) return ed.replace(/\*([^*]+)\*/g, '$1');
+    return applyMatcher(load().text, v);
+  });
+
+  function mediaSwap(el, v) {
+    return mediaFor(v) || v;
+  }
+  function srcsetSwap(el, v) {
+    return swapSrcset(v);
+  }
+  wrap(window.HTMLMediaElement && HTMLMediaElement.prototype, 'src', mediaSwap);
+  wrap(window.HTMLImageElement && HTMLImageElement.prototype, 'src', mediaSwap);
+  wrap(window.HTMLSourceElement && HTMLSourceElement.prototype, 'src', mediaSwap);
+  wrap(window.HTMLVideoElement && HTMLVideoElement.prototype, 'poster', function (el, v) {
+    var next = posterFor(v);
+    return next != null ? next : v;
+  });
+  wrap(window.HTMLImageElement && HTMLImageElement.prototype, 'srcset', srcsetSwap);
+  wrap(window.HTMLSourceElement && HTMLSourceElement.prototype, 'srcset', srcsetSwap);
+  var setAttr = Element.prototype.setAttribute;
+  Element.prototype.setAttribute = function (name, value) {
+    if (typeof value === 'string' && /^(IMG|VIDEO|SOURCE|AUDIO)$/.test(this.tagName)) {
+      if (/^src$/i.test(name)) value = mediaSwap(this, value);
+      else if (/^poster$/i.test(name)) {
+        var p = posterFor(value);
+        if (p != null) value = p;
+      } else if (/^srcset$/i.test(name)) value = swapSrcset(value);
+    }
+    if (typeof value === 'string' && /^style$/i.test(name)) value = swapCssUrls(value);
+    return setAttr.call(this, name, value);
+  };
+
+  // Inline styles set from JS: el.style.backgroundImage = 'url(media/x.jpg)', setProperty, cssText.
+  var CSD = window.CSSStyleDeclaration && CSSStyleDeclaration.prototype;
+  if (CSD) {
+    var setProp = CSD.setProperty;
+    CSD.setProperty = function (prop, value, prio) {
+      return setProp.call(this, prop, typeof value === 'string' ? swapCssUrls(value) : value, prio);
+    };
+    var cssUrlSwap = function (el, v) {
+      return swapCssUrls(v);
+    };
+    wrap(CSD, 'cssText', cssUrlSwap);
+    wrap(CSD, 'backgroundImage', cssUrlSwap);
+    wrap(CSD, 'background', cssUrlSwap);
+  }
+
+  /** url(...) in the page's own stylesheets (Vite CSS: url(../media/x.jpg)). */
+  function swapStylesheetUrls() {
+    if (!hasMediaOverrides()) return;
+    var visit = function (rules) {
+      for (var i = 0; rules && i < rules.length; i++) {
+        var r = rules[i];
+        if (r.style) {
+          for (var j = 0; j < r.style.length; j++) {
+            var prop = r.style[j];
+            var val = r.style.getPropertyValue(prop);
+            if (val.indexOf('url(') === -1) continue;
+            var next = swapCssUrls(val);
+            if (next !== val) setProp.call(r.style, prop, next, r.style.getPropertyPriority(prop));
+          }
+        }
+        if (r.cssRules) visit(r.cssRules);
+      }
+    };
+    for (var k = 0; k < document.styleSheets.length; k++) {
+      try {
+        visit(document.styleSheets[k].cssRules);
+      } catch (e) {} // cross-origin (Google Fonts)
+    }
+  }
+
+  // Media already in the parsed page (static <img srcset>, hero posters): the setters above never
+  // ran for them. Runs now (this script sits at the end of <body>) and again at DOMContentLoaded.
+  function swapStaticMedia() {
+    if (!hasMediaOverrides()) return;
+    var els = document.querySelectorAll('img, video, source');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      var changed = false;
+      var attrs = ['src', 'poster', 'srcset'];
+      for (var j = 0; j < attrs.length; j++) {
+        var v = el.getAttribute(attrs[j]);
+        if (!v) continue;
+        var next = attrs[j] === 'srcset' ? swapSrcset(v) : attrs[j] === 'poster' ? posterFor(v) : mediaFor(v);
+        if (next != null && next !== v) {
+          setAttr.call(el, attrs[j], next);
+          changed = changed || attrs[j] !== 'poster';
+        }
+      }
+      if (changed && el.tagName === 'SOURCE' && el.parentNode && typeof el.parentNode.load === 'function') el.parentNode.load();
+      else if (changed && el.tagName === 'VIDEO' && typeof el.load === 'function') el.load();
+    }
+    var styled = document.querySelectorAll('[style*="url"]');
+    for (var s = 0; s < styled.length; s++) {
+      var css = styled[s].getAttribute('style');
+      var swapped = swapCssUrls(css);
+      if (swapped !== css) setAttr.call(styled[s], 'style', swapped);
+    }
+  }
+  try {
+    swapStaticMedia();
+  } catch (e) {}
+
+  // Copy already in the parsed page (labels the bundles never write): the setters above never see
+  // it. [data-edit] elements are skipped — the bundles fill those, through the setters.
+  function applyStaticText() {
+    var m = load().text;
+    if (!m || !document.body) return;
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i];
+      var p = n.parentNode;
+      if (!p || p.nodeType !== 1 || /^(SCRIPT|STYLE|TEMPLATE|TEXTAREA|NOSCRIPT)$/.test(p.tagName) || p.closest('[data-edit]')) continue;
+      var v = n.data;
+      if (!v || !/\S/.test(v)) continue;
+      var next = applyMatcher(m, v);
+      if (next !== v) n.data = next;
+    }
+  }
+  try {
+    applyStaticText();
+  } catch (e) {}
+
+  if (EDITOR) {
+    var booted = null;
+    var timer = null;
+    var fingerprint = function (raw) {
+      var n = normalize(raw || {}, true);
+      return JSON.stringify([n.pairs, n.media, n.edits]);
+    };
+    addEventListener('message', function (e) {
+      if (e.source !== parent || !e.data || e.data.type !== 'draftly-preset-sync') return;
+      var textEdits = {};
+      var ce = e.data.contentEdits || {};
+      for (var ck in ce) if (ck.indexOf('edit:') === 0) textEdits[ck] = ce[ck];
+      var raw = {
+        replacements: e.data.replacements || [],
+        assetOverrides: e.data.assetOverrides || {},
+        assetCatalog: e.data.assetCatalog || [],
+        contentEdits: textEdits,
+      };
+      if (booted === null) {
+        var stored = null;
+        try {
+          stored = JSON.parse(sessionStorage.getItem(KEY) || 'null');
+        } catch (err) {}
+        booted = fingerprint(stored);
+      }
+      var next = fingerprint(raw);
+      var pending = timer !== null;
+      clearTimeout(timer);
+      timer = null;
+      if (next === booted) return;
+      // The page already shows this change (a click-to-edit text edit): remember it for the next
+      // load without reloading under the user — unless an earlier change is still waiting to
+      // reload (it would never show).
+      if (e.data.reload === false && !pending) {
+        try {
+          sessionStorage.setItem(KEY, JSON.stringify(raw));
+          booted = next;
+        } catch (err) {}
+        return;
+      }
+      // Debounced: a burst of edits reloads the preview once.
+      timer = setTimeout(function () {
+        timer = null;
+        try {
+          sessionStorage.setItem(KEY, JSON.stringify(raw));
+        } catch (err) {
+          return;
+        }
+        booted = next;
+        location.reload();
+      }, 400);
+    });
+  }
+
+  // 3. Home page only: retarget sibling-page links once the DOM exists.
+  var SYNONYMS = {
+    book: ['book', 'booking', 'appointment', 'contact', 'cta', 'stay', 'hold', 'visit', 'departures', 'start', 'courts'],
+    booking: ['booking', 'book', 'contact', 'cta', 'stay', 'hold', 'visit', 'departures', 'start', 'courts'],
+    contact: ['contact', 'book', 'booking', 'cta', 'newsletter', 'close', 'closing'],
+    services: ['services', 'service', 'treatments', 'pricing', 'capabilities', 'caps'],
+    treatments: ['treatments', 'services', 'pricing'],
+    shop: ['shop', 'products', 'flavours', 'flavors', 'bestsellers', 'prices'],
+    subscribe: ['subscribe', 'subscription', 'plans', 'pricing'],
+    rooms: ['rooms', 'suites', 'stay'],
+    tours: ['tours', 'trips'],
+    tour: ['tours', 'trips', 'book', 'booking'],
+    work: ['work', 'projects', 'selected-work'],
+    projects: ['projects', 'work'],
+    project: ['projects', 'work'],
+    speaking: ['speaking', 'talks', 'keynotes'],
+    coaching: ['coaching', 'programs', 'programmes', 'work-with-me'],
+    // templates-50 (v4) sibling pages
+    chalets: ['chalets', 'houses', 'rooms', 'stay'],
+    cabins: ['cabins', 'rooms', 'stay'],
+    residences: ['residences', 'homes'],
+    availability: ['availability', 'residences', 'register', 'visit'],
+    homes: ['homes', 'listings', 'featured'],
+    sell: ['sell', 'valuation', 'contact'],
+    expeditions: ['expeditions', 'departures', 'trips'],
+    trips: ['trips', 'liveaboard', 'courses'],
+    programmes: ['programmes', 'programs', 'packages', 'courses', 'tracks'],
+    classes: ['classes', 'practice', 'week', 'plans'],
+    lessons: ['lessons', 'instruments', 'teachers'],
+    courses: ['courses', 'routes', 'fees'],
+    curriculum: ['curriculum', 'run', 'pricing'],
+    tracks: ['tracks', 'build'],
+    plans: ['plans', 'pricing', 'memberships', 'membership', 'packages'],
+    plan: ['plan', 'plans', 'recipes', 'pricing'],
+    pricing: ['pricing', 'packages', 'plans'],
+    packages: ['packages', 'pricing', 'plans', 'process', 'steps'],
+    memberships: ['memberships', 'membership', 'members', 'plans', 'pricing'],
+    membership: ['membership', 'memberships', 'members', 'plans', 'pricing'],
+    members: ['members', 'membership', 'memberships'],
+    trial: ['free-week', 'trial', 'week', 'book'],
+    start: ['start', 'contact', 'how'],
+    estimate: ['estimate', 'quote', 'contact', 'results'],
+    quote: ['quote', 'cover', 'story'],
+    claims: ['claims', 'cover'],
+    consult: ['consult', 'contact'],
+    practice: ['practice', 'services'],
+    brief: ['brief', 'contact', 'studio'],
+    hire: ['hire', 'employers', 'cv'],
+    jobs: ['jobs', 'board'],
+    enrol: ['enrol', 'pricing', 'fees'],
+    apply: ['apply', 'cohorts', 'tracks'],
+    inquire: ['inquire', 'hold', 'planner', 'contact'],
+    lineup: ['lineup'],
+    tickets: ['tickets', 'visit'],
+    agenda: ['agenda', 'speakers', 'story'],
+    menus: ['menus', 'supper-club', 'evening'],
+    prints: ['prints', 'work'],
+    episodes: ['episodes', 'latest', 'run'],
+    support: ['support', 'members', 'subscribe'],
+    artists: ['artists'],
+    editions: ['editions'],
+    workshops: ['workshops'],
+    club: ['club', 'finder'],
+    build: ['build', 'models', 'configure'],
+    ride: ['ride'],
+    atelier: ['atelier', 'craft', 'inside'],
+    collection: ['collection', 'configure'],
+    donate: ['donate', 'give'],
+    give: ['give', 'donate'],
+    volunteer: ['volunteer', 'hands'],
+    visit: ['visit', 'welcome'],
+    adopt: ['adopt', 'species'],
+    whatson: ['whatson', 'showing', 'night'],
+    'tee-times': ['tee-times', 'tee', 'course'],
+  };
+  var started = false;
+  var pending = false;
+  // Pages that are a call to action (book, enquire, give…): with no matching section, send the
+  // visitor to the page's last section (usually the closing CTA) rather than hide the button.
+  var CTA_PAGE = /^(book|booking|trial|contact|enquire|inquire|apply|enrol|enroll|donate|give|quote|estimate|consult|start|tickets|hire|brief|membership|memberships|members|support|plan|plans|packages|pricing|tour|reserve|checkout|join|subscribe|signup)$/;
+  function sectionFor(name, hash) {
+    var stem = name.replace(/\.html$/i, '').toLowerCase();
+    var ids = (hash ? [hash] : []).concat(SYNONYMS[stem] || [], [stem]);
+    for (var i = 0; i < ids.length; i++) if (ids[i] && document.getElementById(ids[i])) return '#' + ids[i];
+    var form = document.querySelector('main form, form');
+    var host = form && (form.id ? form : form.closest('[id]'));
+    if (host && host.id && host.id !== 'top') return '#' + host.id;
+    if (CTA_PAGE.test(stem)) {
+      var sections = document.querySelectorAll('main section[id], body > section[id]');
+      var last = sections[sections.length - 1];
+      if (last && last.id !== 'top') return '#' + last.id;
+    }
+    return null;
+  }
+  function retarget() {
+    pending = false;
+    var base = document.baseURI.replace(/[?#].*$/, '').replace(/[^/]*$/, '');
+    var links = document.querySelectorAll('a[href]');
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      var raw = a.getAttribute('href') || '';
+      if (raw.charAt(0) === '#' || /^(mailto|tel|javascript|https?):/i.test(raw)) continue;
+      var parts = a.href.split('#');
+      var file = parts[0].split('?')[0];
+      if (file.indexOf(base) !== 0) continue;
+      var name = file.slice(base.length);
+      if (name === '' || name === 'index.html') {
+        a.setAttribute('href', parts[1] ? '#' + parts[1] : '#top');
+      } else if (/\.html$/i.test(name)) {
+        var hash = '';
+        try {
+          hash = parts[1] ? decodeURIComponent(parts[1]) : '';
+        } catch (err) {}
+        var target = sectionFor(name, hash);
+        var li = a.parentElement && a.parentElement.tagName === 'LI' && a.parentElement.children.length === 1;
+        var box = li ? a.parentElement : a;
+        if (target) {
+          a.setAttribute('href', target);
+          // Hidden on an earlier pass, before the section was rendered: show it again.
+          if (box.hasAttribute('data-draftly-hidden')) {
+            box.style.display = '';
+            box.removeAttribute('data-draftly-hidden');
+          }
+        } else if (!box.hasAttribute('data-draftly-hidden')) {
+          box.style.display = 'none';
+          box.setAttribute('data-draftly-hidden', '');
+        }
+        a.setAttribute('data-draftly-page-link', name);
+      }
+    }
+  }
+  addEventListener('load', function () {
+    try {
+      swapStylesheetUrls();
+    } catch (e) {}
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    try {
+      swapStaticMedia();
+      swapStylesheetUrls();
+    } catch (e) {}
+    started = true;
+    retarget();
+    new MutationObserver(function () {
+      if (started && !pending) {
+        pending = true;
+        requestAnimationFrame(retarget);
+      }
+    }).observe(document.body, { childList: true, subtree: true });
+  });
+
+  // 4. In-page anchors the site's own handler (Lenis etc.) didn't take.
+  addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a || a.target) return;
+    e.preventDefault();
+    var h = a.getAttribute('href');
+    var here = location.href.split('#')[0]; // absolute: <base> may be another origin
+    if (h === '#' || h === '#top') {
+      var t = document.getElementById('top');
+      if (t) t.scrollIntoView();
+      else scrollTo(0, 0);
+      try {
+        history.replaceState(null, '', here + (h === '#' ? '' : h));
+      } catch (err) {}
+      return;
+    }
+    location.hash = h;
+  });
+})();</script>
+</body>
+</html>
